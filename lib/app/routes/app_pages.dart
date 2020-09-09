@@ -3,6 +3,8 @@ import 'package:getx_pattern_demo/app/modules/detail/detail_binding.dart';
 import 'package:getx_pattern_demo/app/modules/detail/detail_page.dart';
 import 'package:getx_pattern_demo/app/modules/home/home_binding.dart';
 import 'package:getx_pattern_demo/app/modules/home/home_page.dart';
+import 'package:getx_pattern_demo/app/modules/login/login_binding.dart';
+import 'package:getx_pattern_demo/app/modules/login/login_page.dart';
 import 'package:getx_pattern_demo/app/modules/splash/splash_binding.dart';
 import 'package:getx_pattern_demo/app/modules/splash/splash_page.dart';
 import 'package:getx_pattern_demo/app/routes/app_routes.dart';
@@ -13,6 +15,11 @@ class AppPages {
       name: AppRoutes.SPLASH,
       page: () => SplashPage(),
       binding: SplashBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.LOGIN,
+      page: () => LoginPage(),
+      binding: LoginBinding(),
     ),
     GetPage(
       name: AppRoutes.HOME,
